@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muzamil Mushtaq - Computer Science Student from Kashmir | Web Developer | Known as m codes6" />
+  <title>Muzamil Mushtaq | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Fira Code', monospace;
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #0f172a;
+      margin-bottom: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      animation: typingName 2.5s steps(25, end), blink 0.7s step-end infinite;
+    }
+    .line {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #0f172a;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      width: 0;
+      margin-bottom: 20px;
+      animation: typingLine 2s steps(20, end) 2.6s forwards, blink 0.7s step-end infinite 2.6s;
+    }
+    .full-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 600px;
+      text-align: left;
+      margin: 20px 0;
+      min-height: 100px;
+    }
+    .paragraph-content {
+      display: inline;
+    }
+
+    .tags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    @keyframes typingName {
+      from { width: 0 }
+      to { width: 17ch }
+    }
+    @keyframes typingLine {
+      from { width: 0 }
+      to { width: 20ch }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+    a {
+      display: inline-block;
+      margin: 10px 15px;
+      font-size: 1rem;
+      color: #1a73e8;
+      text-decoration: none;
+      border: 2px solid #1a73e8;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      background-color: #1a73e8;
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .line, .full-text {
+        font-size: 1rem;
+        text-align: center;
+      }
+      .full-text {
+        text-align: center;
+      }
+      a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Muzamil Mushtaq</h1>
+  <div class="line">Code. Build. Repeat.</div>
+  <p class="full-text">
+    <span class="paragraph-content" id="paragraph"></span>
+  </p>
+
+  <div class="tags">
+    <a href="https://github.com/M-Codes6" target="_blank">GitHub</a>
+    <a href="https://x.com/M_Codes6" target="_blank">X</a>
+    <a href="https://linktr.ee/muzamil.6" target="_blank">Linktree</a>
+ </div>
+  <script>
+    const paragraphText = `I’m a BSc Computer Science student from Sopore, Kashmir, passionate about turning logic into lines of code. From tackling DSA challenges to designing sleek web apps, I see every bug as a plot twist waiting for a comeback. Every challenge is a new level—and I’m here to level up.`;
+
+    const paragraphElement = document.getElementById("paragraph");
+
+    function typeWords(text, element, delay = 100, startDelay = 5000) {
+      const words = text.split(" ");
+      let index = 0;
+
+      setTimeout(() => {
+        const interval = setInterval(() => {
+          if (index < words.length) {
+            element.innerHTML += words[index] + " ";
+            index++;
+          } else {
+            clearInterval(interval);
+          }
+        }, delay);
+      }, startDelay);
+    }
+
+    typeWords(paragraphText, paragraphElement);
+  </script>
+</body>
+</html>
