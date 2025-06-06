@@ -1,0 +1,218 @@
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  #hero {
+    padding-top: calc(var(--navbar-height) + 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: var(--navbar-height);
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - var(--navbar-height));
+    background-color: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding: 2rem 1rem;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+   .nav-menu {
+          gap: 1rem;
+          font-size: 0.9rem;
+        }
+        
+        .nav-menu a {
+          padding: 0.4rem 0.8rem;
+        }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  /* Project Section */
+  .project-grid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    grid-template-columns: unset;
+    gap: 1.5rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .project-card {
+    flex: 0 0 auto;
+    width: 260px;
+    scroll-snap-align: start;
+    max-height: 420px;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .project-content p {
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .project-tech span {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .project-links {
+    gap: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .project-grid::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .project-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .project-grid::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-text,
+  .skills {
+    flex: 1 1 100%;
+  }
+
+  .skill-tags {
+    justify-content: center;
+  }
+
+  /* Blogs Section */
+  .blogs-grid,
+  #all-blogs-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    grid-template-columns: unset;
+    gap: 1.5rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .blog-card {
+    flex: 0 0 auto;
+    width: 280px;
+    scroll-snap-align: start;
+    margin-bottom: 0;
+  }
+
+  .blog-image {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .blog-content {
+    padding: 1rem;
+  }
+
+  .blog-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .blog-content p {
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Add scrollbar styling for blogs */
+  .blogs-grid::-webkit-scrollbar,
+  #all-blogs-container::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .blogs-grid::-webkit-scrollbar-track,
+  #all-blogs-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .blogs-grid::-webkit-scrollbar-thumb,
+  #all-blogs-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+  }
+}
