@@ -12,8 +12,6 @@ if (skillContainer) {
   
   // Skills with proficiency percentages
   const skills = [
-    { name: "HTML5", proficiency: 80 },
-    { name: "CSS3", proficiency: 80 },
     { name: "JavaScript", proficiency: 40 },
     { name: "Python", proficiency: 30 },
     { name: "React", proficiency: 10 },
