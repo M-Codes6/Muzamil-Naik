@@ -8,14 +8,6 @@ const projects = [
     code: "https://github.com/M-Codes6/DuaMate"
   },
   {
-    title: "Paytm Web Clone",
-    description: "Experience a crafted replica of Paytm's web interface built from scratch using HTML, CSS, and JavaScript.It features meticulous linking for various sections, ensuring seamless navigation to associated pages.",
-    image: "assets/images/paytm-web.png",
-    tech: ["HTML", "CSS", "JavaScript"],
-    live: "https://payto.vercel.app/",
-    code: "https://paytm-web-clone-neon.vercel.app/"
-  },
-  {
     title: "Elemind",
     description: "Elemind is an interactive periodic table web app designed to help students learn and memorize element positions through an engaging drag-and-drop interface. With a responsive design, Elemind delivers an optimal experience across desktops, tablets, and smartphones.",
     image: "assets/images/elemind.png",
